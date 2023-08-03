@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+    <script>
+
+        var largura = prompt('Digite a largura do terreno:');
+        var comprimento = prompt('Digite o comprimento do terreno:')
+
+        var area = calcularAreaTerreno(largura, comprimento);
+       
+        document.write('O terreno possui ' + area + ' metros quadrados')
+        
+        function calcularAreaTerreno(largura, comprimento) {
+            var area = largura * comprimento;
+
+            return area
+            //document.write('O terreno possui ' + area + ' metros quadrados')
+        }
+        
+    </script>
+</head>
+
+<body>
+
+    <h1>Curso JavaScript - Function</h1>
+
+    <input type="text" placeholder="Teste de Precedência" id="nome" disabled="disabled">
+</body>
+
+</html>
