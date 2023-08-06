@@ -8,8 +8,31 @@
     <title>Function</title>
     <script>
         
-        
+        var data = new Date();
 
+        // document.write(data.getDate() + '/' + (data.getMonth() + 1) + '/' + data.getFullYear())
+
+        // adicionar ou remover dias
+        document.write(data.toString());
+        
+        data.setDate(data.getDate() + 1);
+        document.write('<hr/>');
+        document.write(data.toString());
+
+        data.setDate(data.getDate() - 2);
+        document.write('<hr/>');
+        document.write(data.toString());
+        
+        // adicionar ou remover dias
+        data.setMonth(data.getMonth() + 1);
+        document.write('<hr/>');
+        document.write(data.toString());
+
+        data.setMonth(data.getMonth() - 2);
+        document.write('<hr/>');
+        document.write(data.toString());
+
+        
     </script>
 </head>
 

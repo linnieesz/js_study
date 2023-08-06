@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+    <script>
+        
+       var num1 = parseInt(prompt('Dê o numero inicial:'));
+       var ans = prompt('Deseja fazer soma ou subtração?');
+       var num2 = parseInt(prompt('Dê o segundo numero:'));
+
+       if (ans == 'subtração' || ans == 'subtracao') {
+        document.write(sub(num1, num2));
+       } else {
+        document.write(sum(num1, num2));
+       }
+
+       function sum(num1, num2) {
+        num1 = num1 + num2;
+        return num1;
+    }
+    
+    function sub(num1, num2) {
+        num1 = num1 - num2;
+        return num1;
+       }
+    </script>
+</head>
+
+<body>
+
+    <h1>Curso JavaScript - Function</h1>
+
+    <input type="text" placeholder="Teste de Precedência" id="nome" disabled="disabled">
+</body>
+
+</html>
