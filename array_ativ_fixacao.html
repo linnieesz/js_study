@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array</title>
+  <script>
+
+    var lista_objs = [];
+
+    function adcInto() {
+      var valor = document.getElementById('inputObj').value;
+      if (valor != '') {
+        if (lista_objs.indexOf(valor) !== -1) {
+          alert('Objeto já adicionado');
+        } else {
+          lista_objs.push(valor);
+          console.log(lista_objs);
+          document.getElementById('inputObj').value = '';
+        }
+      } else {
+        alert('Digite um valor válido');
+      }
+    }
+
+    function ordList() {
+      lista_objs.sort();
+      console.log(lista_objs);
+    }
+
+  </script>
+</head>
+
+<body>
+
+  <h3>Crie seu array:</h3>
+
+  <input id="inputObj" type="text" placeholder="adicione objetos">
+  <button onclick="adcInto()">Adicionar</button>
+  <button onclick="ordList()">Ordenar</button>
+
+
+</body>
+
+</html>
