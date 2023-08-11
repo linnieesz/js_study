@@ -15,6 +15,7 @@
       if (valor != '') {
         if (lista_objs.indexOf(valor) !== -1) {
           alert('Objeto já adicionado');
+          document.getElementById('inputObj').value = '';
         } else {
           lista_objs.push(valor);
           console.log(lista_objs);

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foreach</title>
+  <script>
+
+    var lista_funcionarios = ['Viviane', 'Rosangela', 'Miguel', 'Lucas', 'Fernanda'];
+
+    var f = function(valor, indice){
+      console.log(valor, indice)
+    };
+
+    lista_funcionarios.forEach(f);
+
+   /* lista_funcionarios.forEach(function(valor, indice, array) {
+      //logica
+      console.log('Índice: ' + indice + ' | valor: ' + valor);
+
+      if (valor == 'Lucas') {
+        array[indice] = 'Um novo valor';
+      }
+      // console.log(array);
+    }) */
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
