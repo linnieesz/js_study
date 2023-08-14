@@ -8,19 +8,33 @@
     <title>Function</title>
     <script>
 
-        var exibirSaudacao = function(nome) {
-            document.write('Olá ' + nome + ', tudo bem?')
+        // var exibirSaudacao = function(nome) {
+        //     document.write('Olá ' + nome + ', tudo bem?')
+        // }
+
+        // exibirSaudacao('Jorge');
+
+        // function soma(a, b) {
+        //     return a + b;
+        // }
+
+        function soma() {
+            var resultado = 0;
+
+            for(var i in arguments){
+                resultado +=arguments[i];
+            }
+            
+            return resultado
         }
 
-        exibirSaudacao('Jorge');
+        console.log(soma(7, 5, 3.2));
+
     </script>
 </head>
 
 <body>
 
-    <h1>Curso JavaScript - Function</h1>
-
-    <input type="text" placeholder="Teste de Precedência" id="nome" disabled="disabled">
 </body>
 
 </html>
